@@ -17,6 +17,7 @@
 		FAA2F4B52A17D0AC00537230 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4B42A17D0AC00537230 /* CameraViewController.swift */; };
 		FAA2F4BA2A17FCE900537230 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4B92A17FCE900537230 /* FilterManager.swift */; };
 		FAA2F4BD2A17FD0A00537230 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4BC2A17FD0A00537230 /* ContentViewModel.swift */; };
+		FABDE29E2A18B18700D41A86 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FABDE29D2A18B18700D41A86 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		FAA2F4B42A17D0AC00537230 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		FAA2F4B92A17FCE900537230 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
 		FAA2F4BC2A17FD0A00537230 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		FABDE29C2A18AC7400D41A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FABDE29D2A18B18700D41A86 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 		FA8DA56D2A17677B004BE944 = {
 			isa = PBXGroup;
 			children = (
+				FABDE29D2A18B18700D41A86 /* .gitignore */,
 				FA8DA5782A17677C004BE944 /* FocalSoftwareDemo */,
 				FA8DA5772A17677C004BE944 /* Products */,
 			);
@@ -63,6 +67,7 @@
 		FA8DA5782A17677C004BE944 /* FocalSoftwareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FABDE29C2A18AC7400D41A86 /* Info.plist */,
 				FAA2F4BB2A17FCF600537230 /* ViewModels */,
 				FAA2F4B82A17FCD600537230 /* Models */,
 				FA8DA5792A17677C004BE944 /* FocalSoftwareDemoApp.swift */,
@@ -168,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA8DA5812A17677E004BE944 /* Preview Assets.xcassets in Resources */,
+				FABDE29E2A18B18700D41A86 /* .gitignore in Resources */,
 				FA8DA57E2A17677E004BE944 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,16 +318,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocalSoftwareDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = A5732K72Z6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocalSoftwareDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Focal Demo uses the camera to take photos and video.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -342,16 +349,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FocalSoftwareDemo/Preview Content\"";
 				DEVELOPMENT_TEAM = A5732K72Z6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FocalSoftwareDemo/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Focal Demo uses the camera to take photos and video.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
