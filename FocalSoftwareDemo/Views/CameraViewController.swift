@@ -31,7 +31,7 @@ final class CameraViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemTeal
-        view.bounds.size.height = 400
+        view.bounds.size.height = 425
         
         guard let videoCaptureDevice = AVCaptureDevice.default(for: .video) else { return }
         let videoInput: AVCaptureDeviceInput
