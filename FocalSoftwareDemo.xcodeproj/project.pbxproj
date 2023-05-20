@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA245EAF2A18557000AB8B13 /* BindingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA245EAE2A18557000AB8B13 /* BindingExtension.swift */; };
+		FA245EB12A1864D100AB8B13 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA245EB02A1864D100AB8B13 /* Camera.swift */; };
 		FA8DA57A2A17677C004BE944 /* FocalSoftwareDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DA5792A17677C004BE944 /* FocalSoftwareDemoApp.swift */; };
 		FA8DA57C2A17677C004BE944 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8DA57B2A17677C004BE944 /* ContentView.swift */; };
 		FA8DA57E2A17677E004BE944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8DA57D2A17677E004BE944 /* Assets.xcassets */; };
 		FA8DA5812A17677E004BE944 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8DA5802A17677E004BE944 /* Preview Assets.xcassets */; };
+		FAA2F4B02A17C28600537230 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4AF2A17C28600537230 /* AppColors.swift */; };
+		FAA2F4B52A17D0AC00537230 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4B42A17D0AC00537230 /* CameraViewController.swift */; };
+		FAA2F4BA2A17FCE900537230 /* FilterManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4B92A17FCE900537230 /* FilterManager.swift */; };
+		FAA2F4BD2A17FD0A00537230 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA2F4BC2A17FD0A00537230 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA245EAE2A18557000AB8B13 /* BindingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtension.swift; sourceTree = "<group>"; };
+		FA245EB02A1864D100AB8B13 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		FA8DA5762A17677C004BE944 /* FocalSoftwareDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FocalSoftwareDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8DA5792A17677C004BE944 /* FocalSoftwareDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocalSoftwareDemoApp.swift; sourceTree = "<group>"; };
 		FA8DA57B2A17677C004BE944 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA8DA57D2A17677E004BE944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA8DA5802A17677E004BE944 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAA2F4AF2A17C28600537230 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		FAA2F4B42A17D0AC00537230 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		FAA2F4B92A17FCE900537230 /* FilterManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterManager.swift; sourceTree = "<group>"; };
+		FAA2F4BC2A17FD0A00537230 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +63,14 @@
 		FA8DA5782A17677C004BE944 /* FocalSoftwareDemo */ = {
 			isa = PBXGroup;
 			children = (
+				FAA2F4BB2A17FCF600537230 /* ViewModels */,
+				FAA2F4B82A17FCD600537230 /* Models */,
 				FA8DA5792A17677C004BE944 /* FocalSoftwareDemoApp.swift */,
-				FA8DA57B2A17677C004BE944 /* ContentView.swift */,
+				FAA2F4B12A17C62000537230 /* Views */,
 				FA8DA57D2A17677E004BE944 /* Assets.xcassets */,
 				FA8DA57F2A17677E004BE944 /* Preview Content */,
+				FAA2F4AF2A17C28600537230 /* AppColors.swift */,
+				FA245EAE2A18557000AB8B13 /* BindingExtension.swift */,
 			);
 			path = FocalSoftwareDemo;
 			sourceTree = "<group>";
@@ -65,6 +81,32 @@
 				FA8DA5802A17677E004BE944 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FAA2F4B12A17C62000537230 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA8DA57B2A17677C004BE944 /* ContentView.swift */,
+				FAA2F4B42A17D0AC00537230 /* CameraViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAA2F4B82A17FCD600537230 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2F4B92A17FCE900537230 /* FilterManager.swift */,
+				FA245EB02A1864D100AB8B13 /* Camera.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAA2F4BB2A17FCF600537230 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				FAA2F4BC2A17FD0A00537230 /* ContentViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +179,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA245EB12A1864D100AB8B13 /* Camera.swift in Sources */,
+				FAA2F4BA2A17FCE900537230 /* FilterManager.swift in Sources */,
+				FAA2F4B02A17C28600537230 /* AppColors.swift in Sources */,
+				FAA2F4BD2A17FD0A00537230 /* ContentViewModel.swift in Sources */,
+				FAA2F4B52A17D0AC00537230 /* CameraViewController.swift in Sources */,
 				FA8DA57C2A17677C004BE944 /* ContentView.swift in Sources */,
+				FA245EAF2A18557000AB8B13 /* BindingExtension.swift in Sources */,
 				FA8DA57A2A17677C004BE944 /* FocalSoftwareDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +318,7 @@
 				DEVELOPMENT_TEAM = A5732K72Z6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Focal Demo uses the camera to take photos and video.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +348,7 @@
 				DEVELOPMENT_TEAM = A5732K72Z6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Focal Demo uses the camera to take photos and video.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
