@@ -76,10 +76,14 @@ class ContentViewModel: ObservableObject {
         autoUpdateQueue.async {
             while true {
                 if self.autofocus {
-                    self.updateFocus(to: self.camera.captureDevice?.lensPosition)
+                    DispatchQueue.main.async {
+                        self.updateFocus(to: self.camera.captureDevice?.lensPosition)
+                    }
                 }
                 if self.autotint {
-                    self.updateExposure(to: self.camera.captureDevice?.iso)
+                    DispatchQueue.main.async {
+                        self.updateExposure(to: self.camera.captureDevice?.iso)
+                    }
                 }
                 Thread.sleep(forTimeInterval: 0.1)
             }
